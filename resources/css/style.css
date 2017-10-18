@@ -42,8 +42,11 @@ header {
 .banner {
 	display: flex;
 	height:25rem;
+	max-width: 100%;
 	background-image: url("../images/moto.jpeg");
+  	background-repeat: no-repeat;
 	background-size: 100%;
+	background-position: center;
 }
 
 .arrival {
@@ -85,11 +88,16 @@ nav a {
 	text-decoration: none;
 }
 
+.media {
+  display: none;
+}
+
 /*Product Grid*/
 .products {
 	display: flex;
 	margin: 3rem auto;
 	justify-content: space-between;
+	width: 100%;
 }
 
 .product {
@@ -101,6 +109,7 @@ nav a {
 }
 
 .product img {
+	display: flex;
 	max-height: 9rem;
 	max-width: 9rem;
 	margin: auto;
@@ -141,4 +150,23 @@ footer {
 	background-color: black;
 	color: white;
 }
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  .media {
+    display: block;
+    text-align: center;
+    color: white;
+    margin: auto;
+  }
+  .product {
+    width: 47%;
+  }
+  .product.glasses {
+    display: none;
+  }
+}
+
 
