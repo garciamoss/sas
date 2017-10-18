@@ -60,7 +60,7 @@ header {
 	padding: 2rem 3rem;
 }
 
-h3 {
+h4 {
 	font-size: 1rem;
 	font-weight: bold;
 	padding: 0.25rem 0;
@@ -152,9 +152,15 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  nav content{
+    width: 100%;
+  }
   nav ul {
     display: none;
-  }
+    }
   .media {
     display: block;
     text-align: center;
@@ -166,6 +172,22 @@ footer {
   }
   .product.glasses {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .banner {
+    height: 100%;
+  }
+  .arrival {
+    width: 100%;
+    height: auto;
+  }
+  h4 {
+    font-size: 0.77rem;
+  }
+  h1 {
+    font-size: 1rem;
   }
 }
 
